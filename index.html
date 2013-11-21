@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>RaspberryPi, PHP, & a lot of fun</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -35,319 +35,610 @@
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+            <div class="slides">
+
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+                    <h2 style="line-height:1em">PHP,<br>Raspberry Pi,<br>&amp; a lot of fun</h1>
+					<img src="medias/logos/1.png" width="33%" alt="Logo SVG">
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					    <a href="http://www.raspberrypi.org/">www.raspberrypi.org</a>
+					    <br><a href="https://twitter.com/#raspi">#raspi</a>
 					</p>
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+                    <h2 style="text-transform:lowercase;">/me</h2>
+                    <p>&nbsp;</p>
+					<pre><code contenteditable>var me = {
+    "user": "Ronan"
+    , "age": 35
+    , "origin": "Brittany"
+    , "twitter": "@arno_u_loginlux"
+    , "repo": "github.com/ronanguilloux"
+    , "work": "cto@toog.fr"
+    , "tags": [
+        "dad"
+        , "bearded web developer"
+        , "foss supporter"
+    ]
+}
+</code></pre>
 
-					<aside class="notes">
+                	<p><br>PHP Appreciation Society Member<p>
+                    <p><small>since 1999</small></p>
+
+                    <aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
+
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
+                        <h2>3 sincere warns about PHP on Raspi</h2>
+                    </section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+                        <p>1/3: Raspberry Pi is...</p>
+                        <br />
+                        <p>not a production environment,<br> not scalable,<br>not safe for work<br> not entreprise-ready</p>
+                        <br />
+                        <p>and it's OK.
+                        <br />
+                        <br />
+                        <p>So...</p>
+                        <h2>HACK, LEARN, HAVE FUN</h2>
+                        <p>or STFU</p>
 					</section>
+
+                    <section>
+                        <p>2/3: PHP is serious IT after all. Raspi is not.</p>
+                        <br />
+                        <br />
+                        <h2>PHP is for web-based business</h2>
+                        <p>(or not)</p>
+                        <br><p>~</p><br>
+                        <h2>Raspberry Pi is for week-end projects</h2>
+                        <p>(&amp; vice-versa)</p>
+					</section>
+
+                    <section>
+                        <p>3/3: by design...</p>
+                        <h2>&nbsp;</h2>
+                        <p>PHP is not for Hardware<br>
+                            <small>(integrated circuits, controllers, sensors...)</small></p>
+                        <br><p>~</p><br>
+                        <p>Raspberry Pi is 100%<br> for learning &amp; playing<br> with electronic hardware!</p>
+					</section>
+
+				</section>
+				<section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
+                        <h2>Meet the raspberry Pi</h2>
+						<img width="50%" src="medias/photos/1.jpg" />
+						<p><small>So this is how it started:<br>I bought a Rasberry Pi.</small></p>
 					</section>
+
 					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+                        <h2>Meet the raspberry Pi</h2>
+                        <img width="66%" src="medias/photos/2.png" alt="">
+					</section>
+
+					<section>
+						<h2>What’s a Raspberry Pi?</h2>
+                        <p>&nbsp;</p>
+						<blockquote cite="http://www.raspberrypi.org/faqs">
+                            <small>The Raspberry Pi is a credit-card sized computer that plugs into your TV and a keyboard. It’s a capable little PC which can be used for many of the things that your desktop PC does, like spreadsheets, word-processing and games. It also plays high-definition video. We want to see it being used by kids all over the world to learn (python) programming.</small>
+						</blockquote>
+                        <p>&nbsp;</p>
+                        <a href="http://www.raspberrypi.org/faqs">http://www.raspberrypi.org/faqs</a>
+					</section>
+
+                    <section>
+                        <h2>Who did it?</h2>
+                        <p>&nbsp;</p>
+                        <blockquote cite="http://www.raspberrypi.org/about">
+                            <small>The idea behind a tiny and cheap computer for kids came in 2006, when Eben Upton, Rob Mullins, Jack Lang and Alan Mycroft, based at the University of Cambridge’s Computer Laboratory, became concerned about the year-on-year decline in the numbers and skills levels of the A Level students applying to read Computer Science. From a situation in the 1990s where most of the kids applying were coming to interview as experienced hobbyist programmers, the landscape in the 2000s was very different; a typical applicant might only have done a little web design.</small>
+                        </blockquote>
+                        <p>&nbsp;</p>
+                        <a href="http://www.raspberrypi.org/about">http://www.raspberrypi.org/about</a>
+                    </section>
+
+                    <section>
+						<h2>Meet the raspberry Pi</h2>
+						<ul>
+                            <li>not an open hardware</li>
+							<li><a href="http://www.broadcom.com/products/BCM2835">Broadcom BCM2835</a> 700MHz ARM1176JZFS processor with <a href="http://en.wikipedia.org/wiki/Floating-point_unit" title="Floating-point unit">FPU</a> and <a href="http://www.broadcom.com/products/Cellular/Mobile-Multimedia-Processors" title="High Definition 1080p Mobile Multimedia Processor, H.264-friendly, TV capability">Videocore 4 GPU</a></li>
+							<li>GPU provides Open GL ES 2.0, hardware-accelerated OpenVG, and 1080p30 H.264 high-profile decode</li>
+							<li>GPU is capable of 1Gpixel/s, 1.5Gtexel/s or 24GFLOPs with texture filtering and <a href="http://en.wikipedia.org/wiki/Direct_memory_access" title="Direct memory access">DMA infrastructure</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Meet the raspberry Pi</h2>
+						<ul>
+							<li>SDRAM 512 Megabytes (MiB)</li>
+							<li>Boots from SD card, running <a href="http://www.raspbian.org/" title="Raspbian is a free operating system based on Debian optimized for the Raspberry Pi hardwar">Debian-based Raspbian “wheezy” </a> or <a href="http://www.raspberrypi.org/downloads">Arch Linux ARM</a> GNU/Linux based distributions</li>
+							<li>Also: Fedora, Gentoo, Slackware, Firefox OS, Android</li>
+							<li>10/100 BaseT Ethernet socket</li>
+							<li>Video outputs: Composite RCA, HDMI</li>
+							<li>Audio outputs: 3.5 mm jack, HDMI</li>
+							<li>Onboard storage: SD, MMC, SDIO card slot</li>
+						</ul>
+					</section>
+
+					<section>
+                        <h2>Meet the raspberry Pi</h2>
+                        <img width="66%" src="medias/photos/3.jpg" alt="">
+                        <p><small>Note the <a href="http://www.raspberrypi.org/archives/1254">csi connector pins for digital camera!</a></small></p>
+					</section>
+
+					<section>
+						<h2>Manufactured in Europe!</h2>
+						<iframe width="640" height="360" src="https://www.youtube.com/embed/zj9bFgsaBd4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+						<p><small>Raspi are manufactured in the UK, <br>at Sony's manufacturing facility in Pencoed, Wales.<br>1 million sold a year, since 2012.</small></p>
+					</section>
+
+					<section>
+						<h2>GPIO pins!</h2>
+						<p><img width="50%" height="50%" src="medias/photos/4.png" alt=""></p>
 					</section>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon.css#/themes">Moon</a> -
-						<a href="?theme=simple.css#/themes">Simple</a> -
-						<a href="?theme=solarized.css#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<section>
+						<h2>#raspi for impatients</h2>
+						<h3>Where can I buy one?</h3>
+						<ul>
+							<li><a href="http://fr.farnell.com/raspberry-pi">@ Farnell / Element14</a></li>
+							<li><a href="http://fr.rs-online.com/web/generalDisplay.html?id=raspberrypi">@ RS Online</a></li>
+                            <li><a href="http://www.kubii.fr/">@ Kubii.fr</a></li>
+						</ul>
+						<p><br>$35 / 32.72 €</p>
+						<p><small>(26 € exc. VAT)</small></p>
+						<p><small>Power supply or SD cards are not included</small></p>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
 
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
+					<section>
+						<h2>#raspi for impatients</h2>
+						<h3>Essential accessories</h3>
+						<img src="medias/accessories/1.jpg">
+						<p>a regular 5V / 1A smartphone charger<br>with <span style="text-decoration:line-through">mini</span> <b>micro</b> USB cable</p>
+					</section>
 
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
+					<section>
+						<h2>#raspi for impatients</h2>
+						<h3>Essential accessories</h3>
+						<img width="50%" height="50%" src="medias/accessories/2.jpg">
+						<p>a regular USB Wireless Dongle</p>
+					</section>
+
+					<section>
+						<h2>#raspi for impatients</h2>
+						<h3>Essential accessories</h3>
+						<img width="50%" height="50%" src="medias/accessories/3.jpg">
+						<p>a SD CARD</p>
+					</section>
+
+					<section>
+						<h2>#raspi for impatients</h2>
+						<h3>Essential accessories</h3>
+						<img width="50%" height="50%" src="medias/accessories/4.jpg">
+						<p>(optional) a USB flash drive<br>Mind the box case!</p>
+					</section>
+
+					<section>
+						<h2>#raspi for impatients</h2>
+						<h3>Essential accessories</h3>
+						<img height="50%" width="50%" src="medias/accessories/5.jpg">
+						<p>a box case!</p>
+					</section>
+
+                    <section>
+						<h2>Use a cobbler breakout</h2>
+						<img width="50%" src="medias/demos/1.jpg">
+						<p>see <a href="http://www.adafruit.com/products/914">Adafruit</a></p>
+					</section>
+
+					<section>
+						<h2>Will my USB Webcam fit?</h2>
+						<p>&nbsp;</p>
+						<p>check the community documentation:</p>
+						<p>&nbsp;</p>
+						<p><a href="http://elinux.org/RPi_VerifiedPeripherals">http://elinux.org/RPi_VerifiedPeripherals</a></p>
+						<p>&nbsp;</p>
+						<p><small>keyboards, bluetooth dongles, soundcards, 3G, IR, GPS, HDMI/DVI/VGA cables &amp; converter boxes, webcams, TV tuners,...</small></p>
+					</section>
+
+					<section>
+						<h2>Screen ?</h2>
+						<p>&nbsp;</p>
+						<iframe width="640" height="360" src="https://www.youtube.com/embed/IFJ1YjEiZEg?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+						<p><small>To buy one of these monitors, search eBay for "Car TFT" and there will be loads of results. It should cost about <b>£10 ($16)</b>. It requires a 12V power supply, since it is designed to be powered by a car battery, but you can power it with a regular power adaptor.</small></p>
+					</section>
+
+				</section>
+                <section>
+                	<section>
+                		<h2>Cases, anyone?</h2>
+                	</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <a href="https://www.adafruit.com/products/859">
+							<img width="50%" height="50%" src="medias/cases/1.png" alt="Adafruit case">
+                        </a>
+                        <p>Note the handy slot for the 26-pin IDC cable!</p>
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <img width="50%" height="50%" src="medias/cases/2.jpg" alt="">
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <a href="http://www.raspberry-pi-case.net/">
+                            <img width="50%" height="50%" src="medias/cases/3.jpg" alt="wooden cases" title="wooden cases for sale">
+                        </a>
+                        <aside class="notes">
+                            click to reach the wooden case store
+                        </aside>
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <img width="50%" height="50%" src="medias/cases/4.jpg" alt="">
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <img width="50%" height="50%" src="medias/cases/5.jpg" alt="">
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <img width="50%" height="50%" src="medias/cases/6.png" alt="">
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <img width="50%" height="50%" src="medias/cases/7.jpg" alt="">
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <img width="50%" height="50%" src="medias/cases/8.jpg" alt="">
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <img width="50%" height="50%" src="medias/cases/9.jpg" alt="">
+                        <p>Playing cards box is exactly the right size!</p>
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <img width="50%" height="50%" src="medias/cases/10.jpg" alt="">
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <img width="50%" height="50%" src="medias/cases/11.jpg" alt="">
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <h3>home printable cardboard cases</h3>
+                        <a href="http://stephenpithouse.weebly.com/pi-case.html">
+                            <img width="50%" height="50%" src="medias/cases/12.jpg" alt="">
+                        </a>
+					</section>
+
+					<section>
+						<h2>Cases</h2>
+                        <h3>home printable cardboard cases</h3>
+                        <a href="http://www.raspberrypi.org/archives/1310">
+                            <img width="50%" height="50%" src="medias/cases/13.jpg" alt="">
+                        </a>
+					</section>
+
 				</section>
 
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+
+					<section>
+						<h2>Wait a minute...</h2>
+						<p>&nbsp;</p>
+						<h3>Where the hell did that come from?</h3>
+					</section>
+
+					<section>
+						<h2>microcontrollers</h2>
+						<a href="http://www.arduino.cc"><img height="50%" width="50%" src="medias/makers/arduino_due_in_hand.jpg"></a>
+						<p><small></small>
 					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
 					</section>
+
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h2>Arduino (&amp; Arduino-like MC)</h2>
+						<a href="http://www.arduino.cc/en/Guide/Introduction"><img width="50%" height="50%" src="medias/makers/logo_arduino.jpg"></a>
+							<blockquote cite="http://www.arduino.cc/en/Guide/Introduction">
+                                <small>Arduino is a tool for making computers that can sense and control more of the physical world than your desktop computer. It's an open-source physical computing platform (...), and a development environment for writing software for the board.</small>
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>ARM CPU</h2>
+						<blockquote cite="http://en.wikipedia.org/wiki/ARM_architecture">
+							In 2011: 95% of smartphones, 90% of hard disk drives, 40% of digital televisions and set-top boxes, 15% of microcontrollers and 20% of mobile computers
+						</blockquote>
+                        <p>&nbsp;</p>
+                        <p>GOOD NEWS: ARM is now actively targetted by many distro/packages providers: PHP, NodeJs,...</p>
+					</section>
+
+					<section>
+						<h2>How many ARM cores<br>have you got at home?</h2>
+						<p>Microsoft Surface, ASUS Eee Pad, Apple iPads, iPhones &amp; iPods, Samsung Galaxy S2/S3/S4, Google Nexus 4/5/10, Google Chrome Book, Blackberry smartphones, Canon PowerShot A470 digital camera, Nintendo DS game console, TomTom GPS...</p>
 					</section>
 				</section>
 
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
+					<section>
+						<h2>Wait a minute...</h2>
+						<p>&nbsp;</p>
+						<h3>Who did?<br>Who inspired?<br>Who buy?</h3>
+					</section>
+
+					<section>
+						<h2>The Joy of DIY</h2>
+                        <img width="60%" height="60%"
+                        src="medias/makers/640px-Arthur_Rothstein,_Boy_building_a_model_airplane_as_girl_watches,_FSA_camp,_Robstown,_Texas,_1942.jpg">
+						<p><small>Texas, 1942 (Wikimedia Commons)</small></p>
+					</section>
+
+					<section>
+						<h2>"Makers?"</h2>
+						<p>&nbsp;</p>
+						<p><b>maker</b> [ˈmeɪkə] - <i>n.</i><br>&nbsp;</p>
+						<blockquote cite="http://boingboing.net/2009/10/28/makers-my-new-novel.html">people who hack hardware, business-models, and living arrangements to discover ways of staying alive and happy even when the economy is falling down the toilet.
+						</blockquote>
+						<p><small>Cory Doctorow, <i><a href="http://craphound.com/makers/">Makers</a></i>, October 2009, <a href="http://craphound.com/makers/Cory_Doctorow_-_Makers.html">[read it for free]</a></small></p>
+						<p>&nbsp;</p>
+						<p><b>related</b>: Dreamers, scientists, hackers, self-replicators, teachers, troublemakers, laser-lovers, scouts</p>
+					</section>
+
+					<section>
+						<h2>"Maker subculture?"</h2>
+						<p>&nbsp;</p>
+						<blockquote cite="http://en.wikipedia.org/wiki/Maker_subculture">
+							The maker subculture is a contemporary subculture, representing a technology-based extension of DIY culture.
+						</blockquote>
+						<p>&nbsp;</p>
+						<p><b>related</b>: DIY, electronics, robotics, 3-D printing, home-automation / domotique, open-source-hardware, fablabs, cnc tools, metalworking, woodworking, knitting, traditional arts and crafts, no-patents</p>
+					</section>
+
+					<section>
+						<h2>OMG, I see makers everywhere!</h2>
+						<ul>
+							<li>places to meet makers: <a href="http://hackerspaces.org/wiki/List_of_Hacker_Spaces">hackerspaces / makespaces</a> (<a href="http://hackerspaces.org/wiki/France#map_google3_1">60+ in France</a>), <a href="http://www.techshop.ws">techshops</a>, <a href="http://makerfaire.com/">makers faire</a></li>
+							<li>magazines: <a href="http://wired.com">Wired</a>, <a href="http://lifehacker.com">Lifehacker</a>, <a href="http://makezine.com/">MAKE magazine</a>, <a href="http://www.instructables.com/">Instructables</a>, <a href="http://www.popularmechanics.com">Popular Mechanics</a><small>(US: 1902, France: 1946)</small></li>
+							<li>Pinterest-like websites: <a href="https://diy.org/explore">diy.org</a>, <a href="http://www.thingiverse.com/newest">thingiverse.com</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>OMG, I see makers marketplaces everywhere!</h2>
+						<ul>
+							<li>dedicated online marketplaces: <a href="https://www.Tindie.com/">tindie.com</a>, <a href="http://www.etsy.com/browse/home-garden/electronics-gadgets">etsy.com</a></li>
+							<li>makers favorite crowd funding websites: <a href="http://www.kickstarter.com/projects/search?term=Raspberry+PI">kickstarter.com</a>, <a href="http://www.quirky.com/shop">quirky.com</a>, <a href="http://www.indiegogo.com/projects?utf8=%E2%9C%93&filter_text=Raspberry+Pi">indiegogo.com</a>, <a href="http://fr.ulule.com/#!tags/technologeek/">ulule.com</a>...</li>
+							<li>online sharing tools : <a href="http://circuitbee.com">circuitbee.com</a>, <a href="http://circuits.io/">circuits.io</a>, <a href="http://www.dz863.com/">dz863.com</a>, <a href="http://upverter.com/">upverter.com</a>, <a href="https://www.circuitlab.com/">circuitlab.com</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Makers go mainstream</h2>
+						<img height="30%" width="30%" src="medias/makers/Makers_3d_2.jpg">
+						<p><small>
+                                Check this <a src="https://www.youtube.com/3grzYoJ2oPQ">talk</a> from the author, Chris Anderson, formally of <a href="http://wired.com">WIRED</a>
+						</small></p>
+
+					</section>
+					<section>
+						<h2>Conclusions so far</h2>
+						<ul class="fragment">
+                            <li class="fragment">Raspberry PI is a <b>hackable device:</b><br> 1st value is <b>software and hardware hackability</b></li>
+							<li class="fragment">NSFW &amp; not scalable AT ALL (but that's OK)</li>
+							<li class="fragment">Running PHP is OK, but PHP was not designed for Hardwaring</li>
+							<li class="fragment">hobbyist &amp; educational purposes FTW</li>
+							<li class="fragment">domestic robots, electronic breadboard &amp; any pet projects that need CPU & network (you know, "Internet of things")</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>&amp; why not...</h2>
+						<ul>
+                            <li>Christmas gift for nephews<br>(mind the AMIGA/ATARI/AMSTRAD effect)
+							<li>home automation</li>
+							<li>domestic server (serve static HTML like a boss)</li>
+							<li>corporate, HTML5-friendly visual <a href="http://jondot.github.com/graphene/">dashboards</a></li>
+							<li>interactive kiosks</li>
+							<li>public screens</li>
+							<li>artistic performances devices</li>
+							<li>(cheap &amp; tiny) museums 2.0 device</li>
+						</ul>
+					</section>
+
 				</section>
+				<section>
+
+					<section>
+						<h2>DIY Projects they really made<br/>with #raspi</h2>
+					</section>
+
+					<section>
+						<h2>2012 Internet of Things Award :</h2>
+						<a href="http://postscapes.com/awards/category/open-source-project"><img width="66%" src="medias/makers/e-health.png"></a>
+						<p><small>The new e-Health sensor platform adds sensing capability for nine different biometric parameters, such as pulse, blood pressure, oxygen in blood (SPO2), electrocardiogram (EKG), airflow, glucometer, galvanic skin response (GSR), patient position and body temperature, to give the Arduino and Raspberry Pi Community a way to develop new e-Health applications and products.</small></p>
+					</section>
+
+					<section>
+						<h2>2012 Internet of Things Award :</h2>
+						<a href="http://postscapes.com/awards/category/open-source-project"><img width="66%" src="medias/makers/luis_conectado.png"></a>
+						<p><small>The new e-Health sensor platform adds sensing capability for nine different biometric parameters, such as pulse, blood pressure, oxygen in blood (SPO2), electrocardiogram (EKG), airflow, glucometer, galvanic skin response (GSR), patient position and body temperature, to give the Arduino and Raspberry Pi Community a way to develop new e-Health applications and products.</small></p>
+					</section>
+
+					<section>
+						<h2>Google Calendar, Raspberry Pi and Lights On / Lights Off</h2>
+						<a href="http://eva-quirinius.blogspot.nl/2012/07/google-calendar-raspberry-pi-and-lights.html"><img width="50%" src="medias/makers/Elro setje horizontaal.jpg"></a>
+					</section>
+
+					<section>
+						<h2>Google Calendar, Raspberry Pi and Lights On / Lights Off</h2>
+						<p>Combining these ingredients:<p>
+							<ul>
+								<li>an Elro "Wireless Home Control" set</li>
+								<li>a Raspberry Pi mini-computer</li>
+								<li>some soldering</li>
+								<li>some programming and</li>
+								<li>Google Calendar</li>
+							</ul>
+							<p>= Have my lights switched on and off automatically based on a schedule I create in Google Calendar.</p>
+					</section>
+
+					<section>
+						<h2>Spotify client</h2>
+						<iframe width="640" height="360" src="https://www.youtube.com/embed/9LUySm2Z8Yk?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+						<p><small>See e <a href="http://korben.info/despotify-un-vrai-client-spotify-pour-linux.html">how-to, using Despotify</a></small></p>
+						<p><small>See also: <a href="https://github.com/Hexxeh/spotify-websocket-api">github.com/Hexxeh/spotify-websocket-api</a> (python)</small></p>
+					</section>
+
+					<section>
+						<h2>Raspberry Strogonanoff</h2>
+						<p>A Raspberry Pi Remote Mains Switcher</p>
+						<a href="https://github.com/dmcg/raspberry-strogonanoff"><img width="33%" src="medias/makers/N38HN_web.jpg"><img width="33%" src="medias/makers/10534-01__49274.1320063755.1280.1280.jpg"></a>
+						<p><small><a href="https://github.com/dmcg/raspberry-strogonanoff">github.com/dmcg/raspberry-strogonanoff (python)</a></small></p>
+					</section>
+
+					<section>
+						<h2>Controlling BigTrack Motors with my Raspberry Pi</h2>
+						<a href="http://thingswatihavedonewithmyraspberrypi.blogspot.co.uk/2012/10/controlling-bigtrack-motors-with-my.html"><img width="50%" src="medias/makers/big-track.jpg"></a>
+					</section>
+
+                    <section>
+						<h2>RC Cars!</h2>
+						<iframe width="640" height="360" src="https://www.youtube.com/embed/a234ivx7LDE?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+						<p><a href="http://www.aonsquared.co.uk/the_dark_pi_rises">aonsquared.co.uk/the_dark_pi_rises</a>
+							<br />Also check <a href="http://pi-cars.com/">pi-cars.com</a></p>
+					</section>
+
+					<section>
+						<h2>Drooooones!</h2>
+						<iframe width="640" height="360" src="https://www.youtube.com/embed/uV1ikae9QP0?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+						<p><small>See <a href="http://www.instructables.com/id/Picopter/">instructables.com/id/Picopter</a>
+							<br/> Also check <a href="https://www.youtube.com/watch?v=FfapDLt79ZY">Tricopter with Picopter Flight Control - Fpv Flight</a>
+							<br />&amp;<a href="https://github.com/big5824/Picopter">Picopter code shared on Github</a>
+						</small></p>
+					</section>
+
+                </section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+
+					<section>
+						<h2>OK,</h2><h2>I'm a nerd,</h2><h2>show me all the</h2><h2>how-to's</h2>
+					</section>
+
+					<section>
+                        <p>Revelation #0</p>
+                        <br><p>~</p><br>
+                        <h3>on GNU/LINUX, everything is a file.</h3>
+					</section>
+
+                    <section>
+                        <p>Wiring a simple LED with a resistor</p>
+                        <img src="medias/demos/7.jpg">
+                        <img src="medias/demos/8.png">
+                    </section>
+                    <section>
+                        <h2>"Exporting" = allow GPOIO access</h2>
+                        <small>In /sys/class/gpio<br>there are two files that allow you to export pins for acces<br> and unexport pins to remove access.</small>
+                        <pre><code contenteditable>
+# cd /sys/class/gpio/
+# ls
+# export     gpiochip0  unexport
+                        </code></pre>
+                    </section>
+                    <section>
+                        <small>Enable GPIO access from user space</small>
+                        <pre><code contenteditable>
+# GPIO=22
+# echo $GPIO > export
+# ls
+</code></pre>
+                    <small>Notice on the first ls that gpio22 doesn't exist,<br> but does after you export GPIO 22 to user space</small>
+<code><pre>
+cd /sys/class/gpio/gpio$GPIO
+ls
+</code></pre>
+<small>There are files to set the direction and retrieve the current value.</small>
+<code><pre>
+echo "in" > direction
+cat value
+</code></pre>
+<small>You can configure the GPIO for output and set the value as well.</small>
+<code><pre>
+echo "out" > direction
+echo 1 > value
+</code></pre>
+
+
+                    </section>
+                </section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
+
+					<section>
+						<h2>Meet the community</h2>
+						<ul>
+							<li><a href="http://www.raspberrypi.org/">RaspberryPi.org</a></li>
+							<li><a href="http://www.reddit.com/r/raspberry_pi">reddit.com/r/raspberry_pi</a></li>
+							<li><a href="http://raspberrypi.stackexchange.com">raspberrypi.stackexchange.com</a></li>
+							<li><a href="https://twitter.com/hashtag/raspi">twitter.com/hashtag/raspi</a></li>
+							<li><a href="http://rastrack.co.uk/">Users near you! (Google Map)</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Read free magazines</h2>
+						<p><a href="http://www.themagpi.com">TheMagPi.com</a></p>
+						<a href="http://www.themagpi.com"><img width="50%" height="50%" src="medias/magazines/1.jpg"></a>
+						<a href="http://www.themagpi.com"><img width="50%" height="50%" src="medias/magazines/2.jpg"></a>
+						<a href="http://www.themagpi.com"><img width="50%" height="50%" src="medias/magazines/3.jpg"></a>
+
+					</section>
+
+					<section>
+						<h2>Tons of fabulous<br/>week-end projects to achieve</h2>
+						<ul>
+							<li><a href="http://learn.adafruit.com/category/raspberry-pi">Learn.adafruit.com (tutorials+shop)</a></li>
+							<li><a href="http://www.cl.cam.ac.uk/freshers/raspberrypi/tutorials/">Computer Laboratory, University of Cambridge: Raspberry Pi Tutorials</a></li>
+						</ul>
+					</section>
+
 				</section>
+
+
+
 
 				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
+					<h2>Here we are!</h2>
+					<p>&nbsp;</p>
+					<p>Questions ?</p>
+					<p>&nbsp;</p>
+					<p>This presentation is available on <a href="http://ronanguilloux.github.com/Raspberry-Pi-Presentation">ronanguilloux.github.com/Raspberry-Pi-Presentation</a></p>
 				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
-
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
