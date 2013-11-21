@@ -55,7 +55,7 @@
     , "origin": "Brittany"
     , "twitter": "@arno_u_loginlux"
     , "repo": "github.com/ronanguilloux"
-    , "work": "cto@toog.fr"
+    , "work": "cto@lespolypodes.com"
     , "tags": [
         "dad"
         , "bearded web developer"
@@ -561,27 +561,32 @@
                         <img src="medias/demos/8.png">
                     </section>
                     <section>
-                        <h2>"Exporting" = allow GPOIO access</h2>
+                        <h2>The W1 kernel device driver</h2>
                         <small>In /sys/class/gpio<br>there are two files that allow you to export pins for acces<br> and unexport pins to remove access.</small>
                         <pre><code contenteditable>
+# modprobe w1-gpio
 # cd /sys/class/gpio/
 # ls
 # export     gpiochip0  unexport
                         </code></pre>
                     </section>
                     <section>
-                        <small>Enable GPIO access from user space</small>
+                        <h2>Enable GPIO access from user space</h2>
                         <pre><code contenteditable>
-# GPIO=22
+# GPIO=17
+# cd /sys/class/gpio/gpio$GPIO
 # echo $GPIO > export
-# ls
+# ls -l
+total 0
+--w------- 1 root root 4096 nov.  21 09:45 export
+lrwxrwxrwx 1 root root    0 nov.  21 09:45 gpio17 -> ../../devices/virtual/gpio/gpio17
+lrwxrwxrwx 1 root root    0 nov.  21 09:44 gpiochip0 -> ../../devices/virtual/gpio/gpiochip0
+--w------- 1 root root 4096 nov.  21 09:44 unexport
 </code></pre>
                     <small>Notice on the first ls that gpio22 doesn't exist,<br> but does after you export GPIO 22 to user space</small>
-<code><pre>
-cd /sys/class/gpio/gpio$GPIO
-ls
-</code></pre>
-<small>There are files to set the direction and retrieve the current value.</small>
+                    </section>
+                    <section>
+                        <small>There are files to set the direction and retrieve the current value.</small>
 <code><pre>
 echo "in" > direction
 cat value
@@ -593,6 +598,39 @@ echo 1 > value
 </code></pre>
 
 
+                    </section>
+                    <section>
+                        <h2>Deal with Kernel &amp; permissions 1/2</h2>
+                        <p>accessing hardware, the right way. </p>
+
+
+                        <p>With default settings the files in /sys/class/gpio are owned by user root and group root. Only the root user will have read/write permissions.
+
+                            We can change this with a udev rule. We create a file in /etc/udev/rules.d that contains the line:</p>
+
+<code><pre>
+KERNEL=="gpio*", SUBSYSTEM=="gpio", ACTION=="add", PROGRAM="/usr/local/bin/hipi-expin gpio /sys%p"
+</code></pre>
+                    </section>
+                    <section>
+                        <h2>"Hey, I just want to blink a LED from my raspberry pi hosted website!"</h2>
+                        <br><p>~</p><br>
+                        <p>=&gt; Create a PHP LED blinker &amp; allow Apache2 to run it</p>
+                        <p>But WARN! Permissions make sens</p>
+<code><pre>
+$ sudo visudo
+www-data ALL=NOPASSWD:/path/to/the/blinker
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h1>DEMO</h2>
+                        <h3>Let's PHP all this</h3>
+                        <br><p>~</p><br>
+                        <p><a href="https://github.com/ronanguilloux/php-gpio">https://github.com/ronanguilloux/php-gpio</a></p>
+                        <p><a href="https://github.com/ronanguilloux/php-gpio-web">https://github.com/ronanguilloux/php-gpio-web</a></p>
+                        <p><a href="https://github.com/ronanguilloux/temperature-pi">https://github.com/ronanguilloux/temperature-pi</a></p>
+                        <p><a href="https://github.com/tbibard/teleinfo-recorder">https://github.com/tbibard/teleinfo-recorder</a></p>
                     </section>
                 </section>
 
@@ -636,7 +674,7 @@ echo 1 > value
 					<p>&nbsp;</p>
 					<p>Questions ?</p>
 					<p>&nbsp;</p>
-					<p>This presentation is available on <a href="http://ronanguilloux.github.com/Raspberry-Pi-Presentation">ronanguilloux.github.com/Raspberry-Pi-Presentation</a></p>
+					<p>This presentation is available on <a href="http://ronanguilloux.github.com/Raspi-ForumPHP-2013">ronanguilloux.github.com/Raspi-ForumPHP-2013</a></p>
 				</section>
 			</div>
 		</div>
